@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./logic.js"></script>
+
+    <title>HOROSKOP-REST-API</title>
+</head>
+
+<body>
+    <div class="backPic" style="color: red">
+        <div class="container">
+            <div class="title">
+                HOROSKOPET
+            </div>
+
+            <div class="instruction">
+                Ange din födelsedag ..
+            </div>
+            <br>
+            <div class="inputDiv">
+                <input type="text" class="idInput" id="myDate" placeholder="YYMMDD" maxlength="6" style="text-align:center;">
+                <span class="error">*</span>
+            </div>
+
+            <div class="buttonContainer">
+                <button class="uppdaterabtn btnFont" type="submit" name="updateHoroscope" id="updateHoroscope" value="" onclick="updateHoroscope()"><span>Uppdatera mitt horoskop </span></button>
+                <button class="raderabtn btnFont" type="submit" name="deleteHoroscope" id="deleteHoroscope" value="" onclick="deleteHoroscope()"><span>Radera mitt horoskop</span></button>
+                <button class="sparabtn btnFont " type="submit" name="addHoroscope" id="addHoroscope" value="" onclick="addHoroscope()"><span>Spara mitt horoskop</span></button>
+
+            </div>
+
+            <div class="horoskop" id="myHoroscope"></div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

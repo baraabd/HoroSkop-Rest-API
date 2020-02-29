@@ -1,0 +1,123 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    
+    body {
+        background-color: black;
+    }
+    
+    .backPic {
+        position: relative;
+        -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        padding: 10px;
+        background: white;
+    }
+    
+    .backPic {
+        background-image: url(./zodiac.gif);
+        background-size: 130em 45em;
+        height: 720px;
+    }
+    
+    #col {
+        background-color: black;
+    }
+    
+    .title {
+        color: darkorange;
+        font-size: 5em;
+        font-weight: bold;
+    }
+    
+    .container {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        left: 40px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .instruction {
+        margin-top: 30px;
+        color: aqua;
+        font-size: 1.5em;
+    }
+    
+    .buttonContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 200px;
+        height: 30px;
+        margin-top: 100px;
+    }
+    
+    input#birth {
+        width: 300px;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 1em;
+    }
+    
+    .btnFont {
+        font-size: 1em;
+        border-radius: 4px;
+        background-color: #f4511e;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 5px;
+        width: 300px;
+        height: 100px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px 0 5px 0;
+    }
+    
+    .btnFont span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    .btnFont span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+    .btnFont:hover span {
+        padding-right: 25px;
+    }
+    
+    .btnFont:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    
+    .horoskop {
+        color: greenyellow;
+        font-size: 3em;
+        position: absolute;
+        left: 400px;
+        top: 200px;
+    }
+    
+    input#myDate {
+        text-align: center;
+    }
+    
+    #updateHoroscope {
+        display: none;
+    }
+    
+    #deleteHoroscope {
+        display: none;
+    }
